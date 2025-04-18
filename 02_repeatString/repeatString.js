@@ -1,8 +1,12 @@
 const repeatString = function(string, num) {
     const stringArray = [];
 
-    for (i = 0; i < num; i++) {
-        stringArray.push(string);
+    if (num >= 0) {
+        for (i = 0; i < num; i++) {
+            stringArray.push(string);
+        }
+    } else {
+        stringArray.push('ERROR');
     }
 
     return stringArray.join('');
